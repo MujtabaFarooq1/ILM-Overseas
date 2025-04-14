@@ -11,8 +11,9 @@ const StudyAustralia = () => {
 
   useEffect(() => {
     setCurrentTab(studyTabs[0]);
-  }, [studyTabs]);
+  }, []);
 
+  /* eslint-disable @typescript-eslint/no-explicit-any */
   const handleClick = (item: any) => {
     setCurrentTab(item);
   };
@@ -29,7 +30,7 @@ const StudyAustralia = () => {
               due to its world-class education system, innovative teaching, and
               high quality of life. With a diverse range of courses, excellent
               facilities, and a welcoming atmosphere, Australia attracts over
-              400,000 international students annually. The country's strong
+              400,000 international students annually. The country&apos;s strong
               emphasis on research, practical learning, and industry connections
               make it an ideal destination for those seeking a rewarding
               educational experience. Students also benefit from generous work
@@ -62,6 +63,7 @@ const StudyAustralia = () => {
           <TabsList className="md:flex grid justify-center bg-transparent m-auto overflow-x-hidden h-12">
             {studyTabs?.map((item) => (
               <TabsTrigger
+                key={item.value}
                 value={item.value}
                 className="data-[state=active]:text-green-600 data-[state=active]:bg-transparent data-[state=active]:border-b-2 border-green-400 border-0 rounded-none text-xl data-[state=active]:shadow-none w-full md:w-auto"
                 onClick={() => handleClick(item)}
@@ -82,11 +84,16 @@ const StudyAustralia = () => {
               <div className="space-y-4">
                 {currentTab?.description.map((benefit, index) => (
                   <table key={index} className="space-y-8">
-                    <tbody className="">  
-                    <tr key={index} className="md:flex gap-2 md:my-3 grid items-start tracking-wide">
-        <td className=" text-left whitespace-nowrap  font-semibold">{benefit.title}</td>
-        <td className=" w-auto">{benefit.description}</td>
-      </tr>
+                    <tbody className="">
+                      <tr
+                        key={index}
+                        className="md:flex gap-2 md:my-3 grid items-start tracking-wide"
+                      >
+                        <td className=" text-left whitespace-nowrap  font-semibold">
+                          {benefit.title}
+                        </td>
+                        <td className=" w-auto">{benefit.description}</td>
+                      </tr>
                     </tbody>
                   </table>
                 ))}

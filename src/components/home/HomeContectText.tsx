@@ -1,11 +1,11 @@
 import React from "react";
 
 export const HomeContectText = () => {
-  const aboutHighlights = [
-    "We make it simple! No need to worry about all the complicated details of studying abroad.",
-    "We find the perfect fit! We won't just send you anywhere - we'll find a program that matches your interests.",
-    "We're with you all the way! Our team of experienced education experts is here to help.",
-  ];
+  // const aboutHighlights = [
+  //   "We make it simple! No need to worry about all the complicated details of studying abroad.",
+  //   "We find the perfect fit! We won't just send you anywhere - we'll find a program that matches your interests.",
+  //   "We're with you all the way! Our team of experienced education experts is here to help.",
+  // ];
   return (
     <div className="tracking-wider w-11/12 md:px-0 px-2">
       <h2 className="md:text-5xl text-3xl font-semibold mb-6">
@@ -28,7 +28,7 @@ export const HomeContectText = () => {
       </p>
 
       <h3 className="text-lg font-semibold text-[#32B22E] mb-4">
-        Here's why ILM OVERSEAS is awesome:
+        Here&apos;s why ILM OVERSEAS is awesome:
       </h3>
 
       <ul className="list-disc pl-6 space-y-4 my-4  text-black">

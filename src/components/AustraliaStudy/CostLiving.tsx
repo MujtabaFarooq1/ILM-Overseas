@@ -8,12 +8,10 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select"
-import Autoplay from "embla-carousel-autoplay"
-import { ChevronDown } from "lucide-react";
+} from "@/components/ui/select";
+import Autoplay from "embla-carousel-autoplay";
 
 const CostOfLivingCalculator = () => {
-  const [country, setCountry] = useState("");
   const [formData, setFormData] = useState({
     rent: 0,
     groceries: 0,
@@ -47,20 +45,20 @@ const CostOfLivingCalculator = () => {
     { image: "/images/uni5.svg" },
     { image: "/images/uni1.svg" },
     { image: "/images/uni2.svg" },
-  
   ];
 
   const plugin = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })
-  )
+  );
   return (
-    
     <div className="cost-of-living-container bg-light ">
-      <h1 className="md:text-5xl text-3xl font-bold text-center pt-5">Top Universities in Australia</h1>
+      <h1 className="md:text-5xl text-3xl font-bold text-center pt-5">
+        Top Universities in Australia
+      </h1>
       <div className="bg-[#F1F5EB] w-full">
         <div className="container m-auto p-2 my-5">
           <Carousel
-                plugins={[plugin.current]}
+            plugins={[plugin.current]}
             opts={{
               align: "center",
             }}
@@ -68,16 +66,17 @@ const CostOfLivingCalculator = () => {
           >
             <CarouselContent>
               {uniimage.map((item, index) => (
-                <CarouselItem key={index} className="md:basis-1/1 lg:basis-1/4 items-center flex justify-center ">
-            
-                      <Image
-                        width={150}
-                        height={200}
-                        src={item.image}
-                        objectFit="cover"
-                        alt="Murdoch University w-full"
-                      />
-          
+                <CarouselItem
+                  key={index}
+                  className="md:basis-1/1 lg:basis-1/4 items-center flex justify-center "
+                >
+                  <Image
+                    width={150}
+                    height={200}
+                    src={item.image}
+                    objectFit="cover"
+                    alt="Murdoch University w-full"
+                  />
                 </CarouselItem>
               ))}
             </CarouselContent>
@@ -90,32 +89,28 @@ const CostOfLivingCalculator = () => {
         </h2>
         <div className="md:flex grid container m-auto justify-between">
           <div className=" bg-white rounded-2xl p-6 shadow-lg">
-
             <div className="my-5 ">
               <label className="block text-lg font-semibold">
                 Select Country
               </label>
-          
+
               <Select>
-  <SelectTrigger className="w-full rounded-full p-6">
-    <SelectValue placeholder="Theme" />
-  </SelectTrigger>
-  <SelectContent>
-    <SelectItem value="light">USA ($)</SelectItem>
-    <SelectItem value="dark">Canada (CAD)</SelectItem>
-    <SelectItem value="system">UK (£)</SelectItem>
-  </SelectContent>
-</Select>
-       
+                <SelectTrigger className="w-full rounded-full p-6">
+                  <SelectValue placeholder="Theme" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="light">USA ($)</SelectItem>
+                  <SelectItem value="dark">Canada (CAD)</SelectItem>
+                  <SelectItem value="system">UK (£)</SelectItem>
+                </SelectContent>
+              </Select>
             </div>
 
             {/* Loop over inputs array */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 space-y-6 mb-4">
               {inputs.map((input) => (
                 <div key={input.name}>
-                  <label className="block text-base px-2">
-                    {input.label}
-                  </label>
+                  <label className="block text-base px-2">{input.label}</label>
                   <input
                     type="number"
                     name={input.name}
@@ -138,7 +133,8 @@ const CostOfLivingCalculator = () => {
 
           {/* Image Representation */}
           <div className="mt-8 text-center">
-            <img
+            <Image
+              fill
               src="/images/coststudy.png"
               alt="Cost of Living"
               className="mx-auto"

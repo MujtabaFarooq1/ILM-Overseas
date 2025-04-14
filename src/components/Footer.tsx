@@ -18,12 +18,14 @@ const Footer = () => {
               objectFit="cover"
               height={50}
             />
-       
-
           </div>
-          <p className="text-xl md:block hidden mt-2 ">Subscribe to Newsletter</p>
+          <p className="text-xl md:block hidden mt-2 ">
+            Subscribe to Newsletter
+          </p>
           <div className="mt-6 md:mt-0">
-          <p className="text-xl md:hidden text-center font-bold block mb-4">Subscribe to Newsletter</p>
+            <p className="text-xl md:hidden text-center font-bold block mb-4">
+              Subscribe to Newsletter
+            </p>
             <div className="w-full">
               <div className="flex  w-full border rounded-full border-gray-500 border-r-none relative ">
                 <Input
@@ -117,7 +119,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-300 hover:text-white text-sm"
                 >
-                  Director's Message
+                  Directors&apos; Message
                 </Link>
               </li>
               <li>
@@ -170,16 +172,12 @@ const Footer = () => {
               A Street 6, Block A Muslim Town, Lahore, Punjab
             </p>
             <div className="h-[120px] w-full bg-gray-800 rounded-md overflow-hidden">
-            <iframe 
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27221.015547274557!2d74.3050646!3d31.5096998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919045b9ebaaaab%3A0xa7f967f98b83f6b9!2sMuslim%20Town%2C%20Lahore%2C%20Punjab!5e0!3m2!1sen!2s!4v1712832690749!5m2!1sen!2s" 
-  width="100%" 
-  height="100%" 
- 
-  loading="lazy" 
-
-  >
-</iframe>
-
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27221.015547274557!2d74.3050646!3d31.5096998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919045b9ebaaaab%3A0xa7f967f98b83f6b9!2sMuslim%20Town%2C%20Lahore%2C%20Punjab!5e0!3m2!1sen!2s!4v1712832690749!5m2!1sen!2s"
+                width="100%"
+                height="100%"
+                loading="lazy"
+              ></iframe>
             </div>
           </div>
         </div>
