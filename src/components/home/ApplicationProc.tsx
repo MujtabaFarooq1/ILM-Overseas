@@ -30,7 +30,7 @@ const ApplicationProcess = () => {
         }}
       ></div>
       <div className="max-w-6xl mx-auto z-10 relative  ">
-        <h2 className="md:text-5xl text-2xl font-bold text-white text-center mb-12">
+        <h2 className="md:text-5xl text-2xl font-extrabold text-white text-center mb-12">
           Application Process
         </h2>
 
@@ -40,7 +40,7 @@ const ApplicationProcess = () => {
               <div className="bg-[#32B22E] rounded-full p-6 w-42 h-42 flex items-center justify-center mb-4">
                 <Image width={300} height={300} src={step.icon} alt="" />
               </div>
-              <p className="text-white text-2xl font-bold text-center">
+              <p className="text-white text-2xl font-extrabold text-center">
                 {step.title}
               </p>
             </div>

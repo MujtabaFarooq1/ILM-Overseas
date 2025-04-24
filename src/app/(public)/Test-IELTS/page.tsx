@@ -17,13 +17,10 @@ const page = () => {
         contentClass="max-w-2xl item-start md:text-start text-center px-15  "
         titleClass="text-3xl font-semibold"
         descriptionClass="text-xl"
-      //  
+        //
         buttonClass=""
       />
-      <IeltsComponent
-        title="IELTS"
-        description="The International English Language Testing System (IELTS) is one of the most widely recognized English proficiency tests globally..."
-      />
+      <IeltsComponent title="IELTS" />
 
       <div className="container px-6 m-auto">
         <StudyCommonTextComponent

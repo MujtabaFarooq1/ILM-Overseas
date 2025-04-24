@@ -8,7 +8,7 @@ const StudyAbroadSection = () => {
     
       <div className="">
         <h1 className="text-xl font-semibold text-[#32B22E] mb-2">Ready to Study Abroad?</h1>
-        <h2 className="md:text-5xl text-3xl md:w-1/2 font-bold mb-6">
+        <h2 className="md:text-5xl text-3xl md:w-1/2 font-extrabold mb-6">
           Ensure Your Documents Are in Order!
         </h2>
         <p className="text-lg tracking-wider">

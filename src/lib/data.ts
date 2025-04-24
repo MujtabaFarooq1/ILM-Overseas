@@ -26,12 +26,12 @@ export const headerData = [
   },
   {
     label: "About Us",
-    href: "/about",
+    href: "/aboutus",
     type: "link",
   },
   {
     label: "Contact Us",
-    href: "/contact",
+    href: "/contactus",
     type: "link",
   },
   {
@@ -297,5 +297,43 @@ export const studyTabs = [
           "Australian universities offer great support services like counseling, health services, and academic help to ensure students have a positive experience while they study.",
       },
     ],
+  },
+];
+
+
+export const contactFormFields = [
+  {
+    id: "name",
+    label: "Name*",
+    placeholder: "Your Name",
+    required: true,
+  },
+  {
+    id: "lastName",
+    label: "Last Name*",
+    placeholder: "Your Last Name",
+    required: true,
+  },
+  {
+    id: "email",
+    label: "Email*",
+    placeholder: "Your Email",
+    type: "email",
+    required: true,
+  },
+  {
+    id: "phone",
+    label: "Phone*",
+    placeholder: "Your Phone Number",
+    required: true,
+  },
+
+  {
+    id: "message",
+    label: "Message*",
+    placeholder: "Your Message",
+    required: true,
+    type: "textarea",
+    rows: 4,
   },
 ];

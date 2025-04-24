@@ -39,7 +39,7 @@ const StatsSection: React.FC<StatsSectionProps> = ({
         <div className="md:flex grid z-10 gap-18 relative justify-between items-center md:p-10 p-2 text-white">
           <div className="md:w-1/2 w-full space-y-4">
             <p>{subtitle}</p>
-            <h2 className="md:text-5xl text-3xl font-bold">{title}</h2>
+            <h2 className="md:text-5xl text-3xl font-extrabold">{title}</h2>
             <p className="text-lg">{description}</p>
 
             {showButton && (
@@ -64,7 +64,7 @@ const StatsSection: React.FC<StatsSectionProps> = ({
                   />
                 </div>
                 <div>
-                  <h3 className="text-6xl font-bold">{stat.value}</h3>
+                  <h3 className="text-6xl font-extrabold">{stat.value}</h3>
                   <p className="text-lg">{stat.label}</p>
                 </div>
               </div>

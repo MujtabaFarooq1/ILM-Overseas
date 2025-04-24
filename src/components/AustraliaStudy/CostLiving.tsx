@@ -52,7 +52,7 @@ const CostOfLivingCalculator = () => {
   );
   return (
     <div className="cost-of-living-container bg-light ">
-      <h1 className="md:text-5xl text-3xl font-bold text-center pt-5">
+      <h1 className="md:text-5xl text-3xl font-extrabold text-center pt-5">
         Top Universities in Australia
       </h1>
       <div className="bg-[#F1F5EB] w-full">
@@ -84,7 +84,7 @@ const CostOfLivingCalculator = () => {
         </div>
       </div>
       <div className=" py-12 container rounded-3xl  m-auto  p-8 bg-[#F1F5EB]">
-        <h2 className="md:text-5xl text-3xl px-4 font-bold  my-6">
+        <h2 className="md:text-5xl text-3xl px-4 font-extrabold  my-6">
           Calculate Your Cost of Living
         </h2>
         <div className="md:flex grid container m-auto justify-between">
@@ -133,8 +133,7 @@ const CostOfLivingCalculator = () => {
 
           {/* Image Representation */}
           <div className="mt-8 text-center">
-            <Image
-              fill
+            <img
               src="/images/coststudy.png"
               alt="Cost of Living"
               className="mx-auto"

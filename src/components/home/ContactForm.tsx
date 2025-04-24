@@ -6,49 +6,10 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "../ui/textarea";
+import { contactFormFields } from "@/lib/data";
 
 
-const contactFormFields = [
-  {
-    id: "name",
-    label: "Name*",
-    placeholder: "Your Name",
-    required: true,
-  },
-  {
-    id: "lastName",
-    label: "Last Name*",
-    placeholder: "Your Last Name",
-    required: true,
-  },
-  {
-    id: "email",
-    label: "Email*",
-    placeholder: "Your Email",
-    type: "email",
-    required: true,
-  },
-  {
-    id: "phone",
-    label: "Phone*",
-    placeholder: "Your Phone Number",
-    required: true,
-  },
-  {
-    id: "qualification",
-    label: "Highest Qualification*",
-    placeholder: "Your Highest Qualification",
-    required: true,
-  },
-  {
-    id: "message",
-    label: "Message*",
-    placeholder: "Your Message",
-    required: true,
-    type: "textarea",
-    rows: 4,
-  },
-];
+
 
 const ContactAboutSection = () => {
   const [formData, setFormData] = useState({
@@ -74,8 +35,8 @@ const ContactAboutSection = () => {
 
   return (
    
-          <div className="bg-white p-6 w-full rounded-2xl">
-            <h2 className="text-3xl font-bold mb-6">
+          <div className="bg-white p-6 w-full rounded-4xl">
+            <h2 className="text-3xl font-extrabold mb-6">
               Reach Us with a Simple Click
             </h2>
             <form onSubmit={handleSubmit} className="space-y-4">
@@ -84,7 +45,7 @@ const ContactAboutSection = () => {
                   <div key={field.id}>
                     <label
                       htmlFor={field.id}
-                      className="block text-base font-medium mb-1 pl-3"
+                      className="block text-base font-medium mb-2 pl-3"
                     >
                       {field.label}
                     </label>
@@ -106,7 +67,7 @@ const ContactAboutSection = () => {
                   <div key={field.id}>
                     <label
                       htmlFor={field.id}
-                      className="block text-base font-medium mb-1 pl-3"
+                      className="block text-base font-medium mb-2 pl-3"
                     >
                       {field.label}
                     </label>
@@ -128,13 +89,13 @@ const ContactAboutSection = () => {
                 <div key={field.id}>
                   <label
                     htmlFor={field.id}
-                    className="block text-base font-medium mb-1 pl-3"
+                    className="block text-base font-medium mb-2 pl-3"
                   >
                     {field.label}
                   </label>
                   {field.type === "textarea" ? (
                     <Textarea
-                      className="rounded-full h-15 p-3"
+                      className="rounded-[43px] h-36 p-6"
                       id={field.id}
                       name={field.id}
                       rows={field.rows}
@@ -159,7 +120,7 @@ const ContactAboutSection = () => {
 
               <Button
                 type="submit"
-                className="bg-[#32B22E] hover:bg-[#32B22E] rounded-full h-15 w-full"
+                className="bg-[#32B22E]  rounded-full mt-2 text-lg font-bold h-15 w-full"
               >
                 Submit
               </Button>

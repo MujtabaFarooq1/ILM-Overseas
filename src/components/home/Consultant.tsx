@@ -7,7 +7,7 @@ const ConsultantSection = () => {
         <div className="md:flex grid justify-between w-full  items-center">
           {/* Left Content */}
           <div className="space-y-4 w-11/12">
-            <h2 className="md:text-5xl text-2xl font-bold leading-tight">
+            <h2 className="md:text-5xl text-2xl font-extrabold leading-tight">
               Best Study Abroad <br />
               Consultant in Lahore, <br />
               Pakistan - ILM OVERSEAS

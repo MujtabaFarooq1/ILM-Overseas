@@ -21,7 +21,7 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({ title, subtitle, serv
       <div className="">
         <div className="text-center mb-10">
           <p className="text-green-500 md:text-2xl text-base font-medium">{subtitle}</p>
-          <h2 className="md:text-5xl text-2xl font-bold md:mt-2">{title}</h2>
+          <h2 className="md:text-5xl text-2xl font-extrabold md:mt-2">{title}</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -38,7 +38,7 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({ title, subtitle, serv
                   height={100}
                 />
               </div>
-              <h3 className="text-lg text-black group-hover:text-white font-bold mb-2">
+              <h3 className="text-lg text-black group-hover:text-white font-extrabold mb-2">
                 {service.title}
               </h3>
               <p className="text-sm">{service.description}</p>

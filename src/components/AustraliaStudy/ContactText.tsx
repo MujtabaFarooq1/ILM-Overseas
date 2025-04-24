@@ -18,13 +18,13 @@ export const ContectText = () => {
 
   return (
     <div>
-      <h2 className="text-4xl font-bold mb-6">
+      <h2 className=" text-[40px] font-extrabold mb-6">
         Why Choose <span className="text-[#32B22E]">ILM</span> OVERSEAS?
       </h2>
       <p className="text-lg  mb-4">
         Unlike others, we offer personalized support tailored to your unique
         needs, ensuring your visa application stands out. From document
-        preparation to interview coaching, we&apos;ve got you covered.
+        preparation to interview coaching, we{"'"}ve got you covered.
       </p>
       <p className="text-sm  mb-6">
         Our success rate speaks for itself—trust the experts who know what it
@@ -35,7 +35,7 @@ export const ContectText = () => {
         confidence!
       </p>
       <h3 className="text-xl font-semibold text-[#32B22E] mb-4">
-        Here’s why ILM OVERSEAS is awesome:
+        Here{"’"}s why ILM OVERSEAS is awesome:
       </h3>
 
       <ul className="list-disc pl-6 my-6 space-y-2">

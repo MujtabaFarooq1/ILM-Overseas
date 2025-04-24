@@ -2,13 +2,12 @@ import React from "react";
 
 interface IeltsComponentProps {
   title: string;
-  description: string;
 }
 
 export const IeltsComponent: React.FC<IeltsComponentProps> = ({ title }) => {
   return (
     <div className="bg-white text-black p-8 container m-auto">
-      <h2 className="md:text-5xl text-3xl font-bold mb-4">{title}</h2>
+      <h2 className="md:text-5xl text-3xl font-extrabold mb-4">{title}</h2>
       <p className="text-lg  tracking-wider text-justify mb-4">
         The{" "}
         <strong> International English Language Testing System (IELTS) </strong>
@@ -27,7 +26,7 @@ export const IeltsComponent: React.FC<IeltsComponentProps> = ({ title }) => {
         <p>
           The International English Language Testing System (IELTS) is one of
           the most widely recognized English proficiency tests globally. Whether
-          you’re looking to study, work, or migrate abroad, especially to
+          you{"’"}re looking to study, work, or migrate abroad, especially to
           countries like the UK, USA, CANADA, AUSTRALIA, or MALAYSIA, IELTS is
           often a mandatory requirement. It assesses your ability to communicate
           effectively in English across four key areas: Listening, Reading,

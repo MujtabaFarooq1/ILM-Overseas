@@ -54,11 +54,9 @@ export default function Home() {
         />
         <ReviewsSection />
         <section className="py-12 md:px-4 p-3 bg-[#F1F5EB]">
-          <div className="md:container w-full mx-auto md:px-3">
-            <div className="md:flex-row flex-col-reverse flex  justify-between gap-8">
+            <div className="md:flex-row flex-col-reverse md:container w-full mx-auto md:px-3 flex  justify-between gap-8">
               <ContactAboutSection />
               <HomeContectText />
-            </div>
           </div>
         </section>
       </div>

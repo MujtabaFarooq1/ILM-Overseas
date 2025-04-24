@@ -23,7 +23,7 @@ const page = () => {
         buttonClass=""
       />
       <div className="container m-auto px-8 space-y-2 my-3">
-        <h1 className="text-3xl font-bold">The world’s top-growing English proficiency test</h1>
+        <h1 className="text-3xl font-extrabold">The world’s top-growing English proficiency test</h1>
         <p className="text-base text-gray-600">PTE Academic is recognized by more than 3,500 universities and colleges worldwide for study, as well as by Australia and UK for work and migration visas, and for professional licensing.</p>
      
       <ServicesSection

@@ -44,7 +44,7 @@ export function ReviewsSection() {
     <div className="">
       <div className="container mx-auto py-8 px-4">
         <div className="flex items-center justify-between mb-6">
-          <h2 className="md:text-4xl text-2xl font-bold">
+          <h2 className="md: text-[40px] text-2xl font-extrabold">
             Google Review Highlights
           </h2>
           <div className="flex gap-2 items-center">
@@ -86,14 +86,14 @@ export function ReviewsSection() {
                           height={60}
                           className=""
                         />
-                        <p className="font-bold text-xl mb-2">
+                        <p className="font-extrabold text-xl mb-2">
                           Very interesting course
                         </p>
                         <p className="text-sm text-gray-600 mb-2">
                           {review.text}
                         </p>
                         <span className="text-xs">Course: Academic Information Seeking</span>
-                        <p className="text-base  font-bold">{review.name}</p>
+                        <p className="text-base  font-extrabold">{review.name}</p>
                       </div>
                       <div className="absolute  top-0 right-10">
                         <Image

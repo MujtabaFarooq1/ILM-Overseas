@@ -1,7 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@custom-variant dark (&:is(.dark *));
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital@0;1&display=swap');
 
 @layer theme {
   :root,
@@ -27,6 +26,11 @@
   }
 }
 
+body{
+  font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
 @layer base {
   .mode {
     background-color: var(--background);
@@ -213,4 +217,23 @@
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
+}
+
+.custom-calendar {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+.custom-calendar table {
+  width: 100% !important;
+}
+
+.custom-calendar .day span {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.custom-calendar button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
 }

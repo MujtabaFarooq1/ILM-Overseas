@@ -23,7 +23,7 @@ const Footer = () => {
             Subscribe to Newsletter
           </p>
           <div className="mt-6 md:mt-0">
-            <p className="text-xl md:hidden text-center font-bold block mb-4">
+            <p className="text-xl md:hidden text-center font-extrabold block mb-4">
               Subscribe to Newsletter
             </p>
             <div className="w-full">
@@ -45,7 +45,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 border-gray-800 border-y py-10 md:grid-cols-4 gap-8">
           {/* Column 1 - About */}
           <div>
-            <h3 className="font-bold text-lg mb-4">
+            <h3 className="font-extrabold text-lg mb-4">
               Shaping Futures Through Global Education
             </h3>
             <div className="flex space-x-3 mt-4">
@@ -84,7 +84,7 @@ const Footer = () => {
 
           {/* Column 2 - Test Preparation */}
           <div>
-            <h3 className="font-bold text-lg mb-4">Test Preparation</h3>
+            <h3 className="font-extrabold text-lg mb-4">Test Preparation</h3>
             <ul className="space-y-2">
               <li>
                 <Link
@@ -104,7 +104,7 @@ const Footer = () => {
               </li>
             </ul>
 
-            <h3 className="font-bold text-lg mt-8 mb-4">Latest News</h3>
+            <h3 className="font-extrabold text-lg mt-8 mb-4">Latest News</h3>
             <p className="text-sm text-gray-300">
               Stay connected and get latest updates from ILM OVERSEAS (PVT) LTD
             </p>
@@ -112,14 +112,14 @@ const Footer = () => {
 
           {/* Column 3 - Quick Links */}
           <div>
-            <h3 className="font-bold text-lg mb-4">Quick Links</h3>
+            <h3 className="font-extrabold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
                 <Link
                   href="#"
                   className="text-gray-300 hover:text-white text-sm"
                 >
-                  Directors&apos; Message
+                  Director{"'"}s Message
                 </Link>
               </li>
               <li>
@@ -167,7 +167,7 @@ const Footer = () => {
 
           {/* Column 4 - Location */}
           <div>
-            <h3 className="font-bold text-lg mb-4">Our Location</h3>
+            <h3 className="font-extrabold text-lg mb-4">Our Location</h3>
             <p className="text-sm text-gray-300 mb-4">
               A Street 6, Block A Muslim Town, Lahore, Punjab
             </p>

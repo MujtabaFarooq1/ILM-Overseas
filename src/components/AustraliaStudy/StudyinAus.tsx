@@ -5,16 +5,16 @@ import { Tabs, TabsList, TabsTrigger } from "../ui/tabs";
 import { TabsContent } from "@radix-ui/react-tabs";
 import { useEffect, useState } from "react";
 import { studyTabs } from "@/lib/data";
+import { StudyInAus } from "@/interface";
 
 const StudyAustralia = () => {
   const [currentTab, setCurrentTab] = useState(studyTabs[0]);
 
   useEffect(() => {
     setCurrentTab(studyTabs[0]);
-  }, []);
+  }, [studyTabs]);
 
-  /* eslint-disable @typescript-eslint/no-explicit-any */
-  const handleClick = (item: any) => {
+  const handleClick = (item: StudyInAus) => {
     setCurrentTab(item);
   };
 
@@ -24,13 +24,15 @@ const StudyAustralia = () => {
         {/* Top Section */}
         <div className="flex flex-col md:flex-row gap-8 mb-8">
           <div className="md:w-2/3">
-            <h2 className="text-5xl font-bold mb-4">Study In Australia</h2>
+            <h2 className=" text-5xl font-extrabold mb-4">
+              Study In Australia
+            </h2>
             <p className="text-gray-700 text-justify">
               Studying in Australia is a top choice for international students
               due to its world-class education system, innovative teaching, and
               high quality of life. With a diverse range of courses, excellent
               facilities, and a welcoming atmosphere, Australia attracts over
-              400,000 international students annually. The country&apos;s strong
+              400,000 international students annually. The country{"'"}s strong
               emphasis on research, practical learning, and industry connections
               make it an ideal destination for those seeking a rewarding
               educational experience. Students also benefit from generous work
@@ -61,9 +63,9 @@ const StudyAustralia = () => {
 
         <Tabs defaultValue={currentTab.value} className="">
           <TabsList className="md:flex grid justify-center bg-transparent m-auto overflow-x-hidden h-12">
-            {studyTabs?.map((item) => (
+            {studyTabs?.map((item, index) => (
               <TabsTrigger
-                key={item.value}
+                key={index}
                 value={item.value}
                 className="data-[state=active]:text-green-600 data-[state=active]:bg-transparent data-[state=active]:border-b-2 border-green-400 border-0 rounded-none text-xl data-[state=active]:shadow-none w-full md:w-auto"
                 onClick={() => handleClick(item)}

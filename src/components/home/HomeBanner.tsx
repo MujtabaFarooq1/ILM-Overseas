@@ -10,18 +10,18 @@ const HomeBanner = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
-            <h1 className="text-2xl sm:text-5xl md:text-6xl font-bold leading-tight">
+            <h1 className="text-2xl sm:text-5xl md:text-6xl font-extrabold leading-tight tracking-tighter">
               Global Opportunities with{" "}
               <span className="text-green-500">ILM</span> OVERSEAS!
             </h1>
-            <p className="text-2xl sm:text-4xl mt-2 text-[#717171]">
+            <p className="text-2xl sm: text-[40px] tracking-tight mt-2 text-[#717171]">
               Future with international students
             </p>
             <p className="text-lg sm:text-xl mt-3">
               The World is Your Classroom: Affordable Option for Study Abroad
             </p>
 
-            <div className="flex  md:bg-white justify-between items-center p-2.5 px-5 rounded-full flex-col sm:flex-row gap-4 mt-8">
+            <div className="flex  md:bg-white justify-between items-center p-2.5 px-5 rounded-full flex-col sm:flex-row gap-4 mt-14">
             <div className="flex justify-between w-full bg-white md:bg-none md:p-0 p-2 rounded-full ">
               <span className="text-sm sm:text-base  w-full">Course Name</span>
               <span className="text-sm sm:text-base w-full border-l-2 pl-4">Select Country</span>
@@ -33,9 +33,9 @@ const HomeBanner = () => {
           </div>
 
           {/* Right Content - Image with Country Flags */}
-          <div className="relative">
+          <div className="relative ">
             <div
-              className="relative bg-center border-4 border-[#32B22E] bg-cover bg-no-repeat rounded-3xl md:w-[398px] h-[567px]  m-auto"
+              className="relative mb-2 bg-center border-4 border-[#32B22E] bg-cover bg-no-repeat rounded-3xl md:w-[398px] h-[567px]  m-auto"
               style={{
                 backgroundImage: "url('/images/homebanner.jpeg')",
               }}

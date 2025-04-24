@@ -45,7 +45,7 @@ import {
   
     return (
       <div className="container m-auto mb-10 px-4 py-8 bg-white ">
-        <h2 className="md:text-4xl text-3xl font-bold mb-6 text-center">{title}</h2>
+        <h2 className="md: text-[40px] text-3xl font-extrabold mb-6 text-center">{title}</h2>
         <Accordion type="single" collapsible>
           {faqs.map((faq, index) => (
             <AccordionItem key={index} value={`item-${index}`}>
